@@ -36,11 +36,12 @@ liste ajout_debut(liste l,int e){
 	tmp->suiv=l;
 	return tmp;
 	}
-/*int nb_ele(liste l){int n;n=0;
-    if (!test_vide(l)){n++;
- 	nb_ele(l->suiv)
+int nb_ele(liste l){int n;n=0;
+    
+    if (test_vide(l))return 0;
+return 1+nb_ele(l->suiv);
 }
-*/
+
 liste ajout_fin(liste l,int e){
 	liste tmp=l;
 	if(test_vide) return ajout_debut(l,e);
