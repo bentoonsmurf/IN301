@@ -1,0 +1,10 @@
+int main (int argc,char **argv){
+int cmpt =0;
+FILE *f = fopen(argv[1],"r");
+while(fgetc(f) != EOF){
+cmtp++;
+}
+printf("%d \n",cmtp);
+return 0;}
+// largeur x hauteur
+// a.out "fic" dans le terminal
